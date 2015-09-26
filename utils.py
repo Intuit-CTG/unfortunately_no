@@ -67,7 +67,6 @@ def split_csv(name, parts):
                 line = csvreader.next()
             except:
                 break
-    print(length)
 
     with open(name) as f:
         csvreader = csv.reader(f)
@@ -135,18 +134,17 @@ texts = [[token for token in text if frequency[token] > 1]
             for text in texts]
 
 dictionary = corpora.Dictionary(texts)
-dictionary.save('temp.dict')
 
-new_vec = dictionary.doc2bow('taxes are hard'.split())
 corpus = [dictionary.doc2bow(text) for text in texts]
 tfidf = models.TfidfModel(corpus)
 index = similarities.SparseMatrixSimilarity(tfidf[corpus],\
-             num_features=len(dictionary))
-def best_answer(question, answers):
+         num_features=len(dictionary))
+
+def best_answer(question, answers, tfidf, index):
     new_vec = dictionary.doc2bow(question.split())
     sims = list(index[tfidf[new_vec]])
     return answers[sims.index(max(sims))]
 
-
+print(best_answer("help my life is hard", answers, tfidf, index))
 
 
