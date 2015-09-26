@@ -41,24 +41,24 @@ function deleteFB()
 {
 if(editingMode!=2)
 	{alert("You must be logged in as the author before you can delete this profile");return}
-	
+
 	if(confirm("This will delete this Fakebook profile ENTIRELY. Are you sure you wish to proceed?")==true)
 	{
 	document.deletetest.editingMode.value=editingMode;
 	//document.deletetest.folders.value="33";
 	//document.deletetest.files.value="XfDMNV"
 	document.deletetest.submit()
-		
+
 		/*
 	$.ajax({
-		type:'POST', 
+		type:'POST',
 		url: 'http://www.classtools.net/main_area/fakebook/delete_fb.php',
 		data: 	{
 				folder:'< ? echo($folder); ?>',
 				file:'< ? echo($file); ?>',
 				editingMode:editingMode
-				}, 
-		success: function(response) 
+				},
+		success: function(response)
 			{
 			if(response=="1")
 				{
@@ -71,7 +71,7 @@ if(editingMode!=2)
 				alert("You must be logged in as the author to delete the template");return
 				}
 			}
-		});	
+		});
 		*/
 	}
 }
@@ -83,7 +83,7 @@ temp=self.location+""
 if(temp.indexOf("home/page")!=-1)
 	{
 	alert("Please SAVE your template before you bookmark it");
-	return; 
+	return;
 	}
 document.getElementById("premLog").value=premiumUserName //theUser
 document.getElementById("premPw").value=premiumUserPW //userPW
@@ -93,16 +93,16 @@ document.getElementById("premTitle").value="Fakebook: Hester Prynne\'s News Feed
 //document.savetofave.submit()
 
 $.ajax({
-	
-		type:'POST', 
-		url: 'http://www.classtools.net/classtools_premium/add_template_to_user_profile.php', 
+
+		type:'POST',
+		url: 'http://www.classtools.net/classtools_premium/add_template_to_user_profile.php',
 		data: 	{
 				premLog:premiumUserName,
 				premPw:premiumUserPW,
 				widgetLoc:temp,
 				premTitle:"Fakebook: Hester Prynne\'s News Feed"
-				 }, 
-		success: function(response) 
+				 },
+		success: function(response)
 			{
 			alert("Saved to Favourites.");
 			}
@@ -118,7 +118,7 @@ if(temp.indexOf("?folder=")!=-1 || temp.indexOf("/fb/")!=-1)
 	if(temp.indexOf("/fb/home/page")==-1){loaditup()}
 	else{self.location="http://www.classtools.net/FAKEBOOK"}
 	}
-	
+
 }
 
 function saveOnExit()
@@ -140,7 +140,7 @@ if(premiumUser==0)
 <body onfocus="if (window.win) {window.win.close()}" onload="checkforloader();displayGallery();checkifanim();removetopbar()" onunload="saveOnExit()">
 <form name="targetad">
 <input type="hidden" id="blurb" name="blurb" value="Hester Prynne&#39;s News Feed===hester_prynne_ID_1134&lt;br&gt;&lt;br&gt;Birth Year: 1850**Job: Seamstress**Town: Boston, Massechusettes**In A Relationship with:.....who knows.&lt;br&gt;&lt;br&gt;Arthur Dimmesdale==arthur_dimmesdale//Rodger Chillingworth==rodger_chillingworth//Pearl Prynne==pearl_prynne//Governor Bellingham==governor_bellingham//Mistress Hibbins==mistress_hibbins//Townspeople==townspeople//&lt;br&gt;&lt;br&gt;1674**Hester Prynne===hester_prynne_ID_1134**Feeling lonely...
-**1 year ago**Arthur Dimmesdale*likes this.*earlier today*arthur_dimmesdale//&lt;br&gt;4067**Hester Prynne===hester_prynne_ID_1134**Legs hurt from standing on this scaffold.**earlier today**Townspeople*No one cares... slut.*earlier today*townspeople//&lt;br&gt;45**Hester Prynne===hester_prynne_ID_1134**I don&#39;t care about what I&#39;ve done. This &#39;A&#39; on my chest stands for &#39;awesome&#39;.**6 Months Later...**Townspeople*dislikes this.*earlier today*townspeople//Rodger Chillingworth*What have you done....I&#39;m back.*earlier today*rodger_chillingworth//Arthur Dimmesdale*Um..who&#39;s this guy*earlier today*arthur_dimmesdale//&lt;br&gt;4540**Rodger Chillingworth===rodger_chillingworth**Wife&#39;s a hoe.. LOL.. on to the next one!**13 days ago**Hester Prynne*I thought you were dead..*earlier today*hester_prynne_ID_1134//Rodger Chillingworth*Time for revenge! :) mwahaha*earlier today*rodger_chillingworth//&lt;br&gt;797**Hester Prynne===hester_prynne_ID_1134**Starting to think this daughter of mine is an evil, elf child**12 days ago**Townspeople*likes this.*earlier today*townspeople//Governor Bellingham*Let us take her.*earlier today*governor_bellingham//Hester Prynne*Never!!*earlier today*hester_prynne_ID_1134//&lt;br&gt;1732**Arthur Dimmesdale===arthur_dimmesdale**Not feeling well..think I need a doctor.. Anyone?**11 days ago**Rodger Chillingworth*I&#39;m a doctor.. I&#39;d LOVE to help!*earlier today*rodger_chillingworth//Hester Prynne*I don&#39;t think thats such a good idea..*earlier today*hester_prynne_ID_1134//&lt;br&gt;4905**Pearl Prynne===pearl_prynne**So... who&#39;s my dad..**10 days ago**Hester Prynne*Pearl, sweetie, you don&#39;t have an earthy father...only a heavenly one.*earlier today*hester_prynne_ID_3088//Pearl Prynne*Shut up mom..*earlier today*pearl_prynne//&lt;br&gt;989**Pearl Prynne===pearl_prynne**Still waiting to find out who this father of mine is. (the human one...not bs heavenly one)**9 days ago**Hester Prynne*Pearl! You are such an elf!!*earlier today*hester_prynne_ID_1134//&lt;br&gt;4980**Arthur Dimmesdale===arthur_dimmesdale**Chillin&#39; on the scaffold.. #sins :(**8 days ago**Townspeople*Oh Reverend, you are amazing!!*earlier today*townspeople//Rodger Chillingworth*I&#39;ve figured you out.*earlier today*rodger_chillingworth//Arthur Dimmesdale*It isn&#39;t what it seems.*earlier today*arthur_dimmesdale//&lt;br&gt;2225**Hester Prynne===hester_prynne_ID_1134**Finally.. after months of charity work, people see the good in me! A=ABLE!**7 days ago**Townspeople*likes this.*earlier today*townspeople//Arthur Dimmesdale*Congratulations, Hester!*earlier today*arthur_dimmesdale//&lt;br&gt;2253**Arthur Dimmesdale===arthur_dimmesdale**Just found out who Hester&#39;s husband was! Oh shit.**6 days ago**Rodger Chillingworth*mwahahahaha :) gotcha!*earlier today*rodger_chillingworth//&lt;br&gt;124**Arthur Dimmesdale===arthur_dimmesdale**Need to get out of here. NOW.**5 days ago**Hester Prynne*Pearl and I shall join you.*earlier today*hester_prynne_ID_1134//Rodger Chillingworth*....Don&#39;t leave me here alone...I want to come*earlier today*rodger_chillingworth//&lt;br&gt;1331**Townspeople===townspeople**Just heard a BEAUTIFUL speech!**4 days ago**Arthur Dimmesdale*Thank you :)*earlier today*arthur_dimmesdale//&lt;br&gt;3351**Arthur Dimmesdale===arthur_dimmesdale**Finally getting out of here. England, here we come!**3 days ago**Pearl Prynne*Likes this.*earlier today*pearl_prynne//Rodger Chillingworth*Got room for one more? :) Can&#39;t wait for England guys!*earlier today*rodger_chillingworth//&lt;br&gt;161**Rodger Chillingworth===rodger_chillingworth**DIMMESDALE DIED.. I feel as if I have no reason to live anymore.**2 days ago**Townspeople, Hester Prynne, Pearl Prynne*likes this.*earlier today*townspeople_hester_prynne_pearl_prynne//&lt;br&gt;2007**Pearl Prynne===pearl_prynne**Rest In Peace to my father, Arthur Dimmesdale.**1 day ago**Pearl Prynne*And to Chillingworth: thank god you&#39;re dead...you were a little too creepy..*earlier today*pearl_prynne//Townspeople*This is crazy!!*earlier today*townspeople//&lt;br&gt;730**Hester Prynne===hester_prynne_ID_1134**The End...Time to make a movie about my great life. Gonna call it &#39;Easy A&#39;!! Go watch it!**earlier today**">
+**1 year ago**Arthur Dimmesdale*likes this.*earlier today*arthur_dimmesdale//&lt;br&gt;4067**Hester Prynne===hester_prynne_ID_1134**Legs hurt from standing on this scaffold.**earlier today**Townspeople*This is very good advice!*earlier today*townspeople//&lt;br&gt;45**Hester Prynne===hester_prynne_ID_1134**I don&#39;t care about what I&#39;ve done. This &#39;A&#39; on my chest stands for &#39;awesome&#39;.**6 Months Later...**Townspeople*dislikes this.*earlier today*townspeople//Rodger Chillingworth*What have you done....I&#39;m back.*earlier today*rodger_chillingworth//Arthur Dimmesdale*Um..who&#39;s this guy*earlier today*arthur_dimmesdale//&lt;br&gt;4540**Rodger Chillingworth===rodger_chillingworth**Wife&#39;s a great person.. LOL.. on to the next one!**13 days ago**Hester Prynne*I thought you were dead..*earlier today*hester_prynne_ID_1134//Rodger Chillingworth*Time for revenge! :) mwahaha*earlier today*rodger_chillingworth//&lt;br&gt;797**Hester Prynne===hester_prynne_ID_1134**Starting to think this daughter of mine is an evil, elf child**12 days ago**Townspeople*likes this.*earlier today*townspeople//Governor Bellingham*Let us take her.*earlier today*governor_bellingham//Hester Prynne*Never!!*earlier today*hester_prynne_ID_1134//&lt;br&gt;1732**Arthur Dimmesdale===arthur_dimmesdale**Not feeling well..think I need a doctor.. Anyone?**11 days ago**Rodger Chillingworth*I&#39;m a doctor.. I&#39;d LOVE to help!*earlier today*rodger_chillingworth//Hester Prynne*I don&#39;t think thats such a good idea..*earlier today*hester_prynne_ID_1134//&lt;br&gt;4905**Pearl Prynne===pearl_prynne**So... who&#39;s my dad..**10 days ago**Hester Prynne*Pearl, sweetie, you don&#39;t have an earthy father...only a heavenly one.*earlier today*hester_prynne_ID_3088//Pearl Prynne*Shut up mom..*earlier today*pearl_prynne//&lt;br&gt;989**Pearl Prynne===pearl_prynne**Still waiting to find out who this father of mine is. (the human one...not bs heavenly one)**9 days ago**Hester Prynne*Pearl! You are such an elf!!*earlier today*hester_prynne_ID_1134//&lt;br&gt;4980**Arthur Dimmesdale===arthur_dimmesdale**Chillin&#39; on the scaffold.. #sins :(**8 days ago**Townspeople*Oh Reverend, you are amazing!!*earlier today*townspeople//Rodger Chillingworth*I&#39;ve figured you out.*earlier today*rodger_chillingworth//Arthur Dimmesdale*It isn&#39;t what it seems.*earlier today*arthur_dimmesdale//&lt;br&gt;2225**Hester Prynne===hester_prynne_ID_1134**Finally.. after months of charity work, people see the good in me! A=ABLE!**7 days ago**Townspeople*likes this.*earlier today*townspeople//Arthur Dimmesdale*Congratulations, Hester!*earlier today*arthur_dimmesdale//&lt;br&gt;2253**Arthur Dimmesdale===arthur_dimmesdale**Just found out who Hester&#39;s husband was! Oh shit.**6 days ago**Rodger Chillingworth*mwahahahaha :) gotcha!*earlier today*rodger_chillingworth//&lt;br&gt;124**Arthur Dimmesdale===arthur_dimmesdale**Need to get out of here. NOW.**5 days ago**Hester Prynne*Pearl and I shall join you.*earlier today*hester_prynne_ID_1134//Rodger Chillingworth*....Don&#39;t leave me here alone...I want to come*earlier today*rodger_chillingworth//&lt;br&gt;1331**Townspeople===townspeople**Just heard a BEAUTIFUL speech!**4 days ago**Arthur Dimmesdale*Thank you :)*earlier today*arthur_dimmesdale//&lt;br&gt;3351**Arthur Dimmesdale===arthur_dimmesdale**Finally getting out of here. England, here we come!**3 days ago**Pearl Prynne*Likes this.*earlier today*pearl_prynne//Rodger Chillingworth*Got room for one more? :) Can&#39;t wait for England guys!*earlier today*rodger_chillingworth//&lt;br&gt;161**Rodger Chillingworth===rodger_chillingworth**DIMMESDALE DIED.. I feel as if I have no reason to live anymore.**2 days ago**Townspeople, Hester Prynne, Pearl Prynne*likes this.*earlier today*townspeople_hester_prynne_pearl_prynne//&lt;br&gt;2007**Pearl Prynne===pearl_prynne**Rest In Peace to my father, Arthur Dimmesdale.**1 day ago**Pearl Prynne*And to Chillingworth: thank god you&#39;re dead...you were a little too creepy..*earlier today*pearl_prynne//Townspeople*This is crazy!!*earlier today*townspeople//&lt;br&gt;730**Hester Prynne===hester_prynne_ID_1134**The End...Time to make a movie about my great life. Gonna call it &#39;Easy A&#39;!! Go watch it!**earlier today**">
 </form>
 
 <form name="reloader" id="reloader" method="post" action="">
@@ -165,21 +165,21 @@ NOTE: the "Post" action is now defunct, I think - delete later if not creating p
 <input type="hidden" id="editType" name="editType" value="" />
 -->
 <input type="hidden" id="loadbox" name="loadbox" value="Hester Prynne&#39;s News Feed===hester_prynne_ID_1134&lt;br&gt;&lt;br&gt;Birth Year: 1850**Job: Seamstress**Town: Boston, Massechusettes**In A Relationship with:.....who knows.&lt;br&gt;&lt;br&gt;Arthur Dimmesdale==arthur_dimmesdale//Rodger Chillingworth==rodger_chillingworth//Pearl Prynne==pearl_prynne//Governor Bellingham==governor_bellingham//Mistress Hibbins==mistress_hibbins//Townspeople==townspeople//&lt;br&gt;&lt;br&gt;1674**Hester Prynne===hester_prynne_ID_1134**Feeling lonely...
-**1 year ago**Arthur Dimmesdale*likes this.*earlier today*arthur_dimmesdale//&lt;br&gt;4067**Hester Prynne===hester_prynne_ID_1134**Legs hurt from standing on this scaffold.**earlier today**Townspeople*No one cares... slut.*earlier today*townspeople//&lt;br&gt;45**Hester Prynne===hester_prynne_ID_1134**I don&#39;t care about what I&#39;ve done. This &#39;A&#39; on my chest stands for &#39;awesome&#39;.**6 Months Later...**Townspeople*dislikes this.*earlier today*townspeople//Rodger Chillingworth*What have you done....I&#39;m back.*earlier today*rodger_chillingworth//Arthur Dimmesdale*Um..who&#39;s this guy*earlier today*arthur_dimmesdale//&lt;br&gt;4540**Rodger Chillingworth===rodger_chillingworth**Wife&#39;s a hoe.. LOL.. on to the next one!**13 days ago**Hester Prynne*I thought you were dead..*earlier today*hester_prynne_ID_1134//Rodger Chillingworth*Time for revenge! :) mwahaha*earlier today*rodger_chillingworth//&lt;br&gt;797**Hester Prynne===hester_prynne_ID_1134**Starting to think this daughter of mine is an evil, elf child**12 days ago**Townspeople*likes this.*earlier today*townspeople//Governor Bellingham*Let us take her.*earlier today*governor_bellingham//Hester Prynne*Never!!*earlier today*hester_prynne_ID_1134//&lt;br&gt;1732**Arthur Dimmesdale===arthur_dimmesdale**Not feeling well..think I need a doctor.. Anyone?**11 days ago**Rodger Chillingworth*I&#39;m a doctor.. I&#39;d LOVE to help!*earlier today*rodger_chillingworth//Hester Prynne*I don&#39;t think thats such a good idea..*earlier today*hester_prynne_ID_1134//&lt;br&gt;4905**Pearl Prynne===pearl_prynne**So... who&#39;s my dad..**10 days ago**Hester Prynne*Pearl, sweetie, you don&#39;t have an earthy father...only a heavenly one.*earlier today*hester_prynne_ID_3088//Pearl Prynne*Shut up mom..*earlier today*pearl_prynne//&lt;br&gt;989**Pearl Prynne===pearl_prynne**Still waiting to find out who this father of mine is. (the human one...not bs heavenly one)**9 days ago**Hester Prynne*Pearl! You are such an elf!!*earlier today*hester_prynne_ID_1134//&lt;br&gt;4980**Arthur Dimmesdale===arthur_dimmesdale**Chillin&#39; on the scaffold.. #sins :(**8 days ago**Townspeople*Oh Reverend, you are amazing!!*earlier today*townspeople//Rodger Chillingworth*I&#39;ve figured you out.*earlier today*rodger_chillingworth//Arthur Dimmesdale*It isn&#39;t what it seems.*earlier today*arthur_dimmesdale//&lt;br&gt;2225**Hester Prynne===hester_prynne_ID_1134**Finally.. after months of charity work, people see the good in me! A=ABLE!**7 days ago**Townspeople*likes this.*earlier today*townspeople//Arthur Dimmesdale*Congratulations, Hester!*earlier today*arthur_dimmesdale//&lt;br&gt;2253**Arthur Dimmesdale===arthur_dimmesdale**Just found out who Hester&#39;s husband was! Oh shit.**6 days ago**Rodger Chillingworth*mwahahahaha :) gotcha!*earlier today*rodger_chillingworth//&lt;br&gt;124**Arthur Dimmesdale===arthur_dimmesdale**Need to get out of here. NOW.**5 days ago**Hester Prynne*Pearl and I shall join you.*earlier today*hester_prynne_ID_1134//Rodger Chillingworth*....Don&#39;t leave me here alone...I want to come*earlier today*rodger_chillingworth//&lt;br&gt;1331**Townspeople===townspeople**Just heard a BEAUTIFUL speech!**4 days ago**Arthur Dimmesdale*Thank you :)*earlier today*arthur_dimmesdale//&lt;br&gt;3351**Arthur Dimmesdale===arthur_dimmesdale**Finally getting out of here. England, here we come!**3 days ago**Pearl Prynne*Likes this.*earlier today*pearl_prynne//Rodger Chillingworth*Got room for one more? :) Can&#39;t wait for England guys!*earlier today*rodger_chillingworth//&lt;br&gt;161**Rodger Chillingworth===rodger_chillingworth**DIMMESDALE DIED.. I feel as if I have no reason to live anymore.**2 days ago**Townspeople, Hester Prynne, Pearl Prynne*likes this.*earlier today*townspeople_hester_prynne_pearl_prynne//&lt;br&gt;2007**Pearl Prynne===pearl_prynne**Rest In Peace to my father, Arthur Dimmesdale.**1 day ago**Pearl Prynne*And to Chillingworth: thank god you&#39;re dead...you were a little too creepy..*earlier today*pearl_prynne//Townspeople*This is crazy!!*earlier today*townspeople//&lt;br&gt;730**Hester Prynne===hester_prynne_ID_1134**The End...Time to make a movie about my great life. Gonna call it &#39;Easy A&#39;!! Go watch it!**earlier today**">
+**1 year ago**Arthur Dimmesdale*likes this.*earlier today*arthur_dimmesdale//&lt;br&gt;4067**Hester Prynne===hester_prynne_ID_1134**Legs hurt from standing on this scaffold.**earlier today**Townspeople*This is very good advice*earlier today*townspeople//&lt;br&gt;45**Hester Prynne===hester_prynne_ID_1134**I don&#39;t care about what I&#39;ve done. This &#39;A&#39; on my chest stands for &#39;awesome&#39;.**6 Months Later...**Townspeople*dislikes this.*earlier today*townspeople//Rodger Chillingworth*What have you done....I&#39;m back.*earlier today*rodger_chillingworth//Arthur Dimmesdale*Um..who&#39;s this guy*earlier today*arthur_dimmesdale//&lt;br&gt;4540**Rodger Chillingworth===rodger_chillingworth**Wife&#39;s a great person.. LOL.. on to the next one!**13 days ago**Hester Prynne*I thought you were dead..*earlier today*hester_prynne_ID_1134//Rodger Chillingworth*Time for revenge! :) mwahaha*earlier today*rodger_chillingworth//&lt;br&gt;797**Hester Prynne===hester_prynne_ID_1134**Starting to think this daughter of mine is an evil, elf child**12 days ago**Townspeople*likes this.*earlier today*townspeople//Governor Bellingham*Let us take her.*earlier today*governor_bellingham//Hester Prynne*Never!!*earlier today*hester_prynne_ID_1134//&lt;br&gt;1732**Arthur Dimmesdale===arthur_dimmesdale**Not feeling well..think I need a doctor.. Anyone?**11 days ago**Rodger Chillingworth*I&#39;m a doctor.. I&#39;d LOVE to help!*earlier today*rodger_chillingworth//Hester Prynne*I don&#39;t think thats such a good idea..*earlier today*hester_prynne_ID_1134//&lt;br&gt;4905**Pearl Prynne===pearl_prynne**So... who&#39;s my dad..**10 days ago**Hester Prynne*Pearl, sweetie, you don&#39;t have an earthy father...only a heavenly one.*earlier today*hester_prynne_ID_3088//Pearl Prynne*Shut up mom..*earlier today*pearl_prynne//&lt;br&gt;989**Pearl Prynne===pearl_prynne**Still waiting to find out who this father of mine is. (the human one...not bs heavenly one)**9 days ago**Hester Prynne*Pearl! You are such an elf!!*earlier today*hester_prynne_ID_1134//&lt;br&gt;4980**Arthur Dimmesdale===arthur_dimmesdale**Chillin&#39; on the scaffold.. #sins :(**8 days ago**Townspeople*Oh Reverend, you are amazing!!*earlier today*townspeople//Rodger Chillingworth*I&#39;ve figured you out.*earlier today*rodger_chillingworth//Arthur Dimmesdale*It isn&#39;t what it seems.*earlier today*arthur_dimmesdale//&lt;br&gt;2225**Hester Prynne===hester_prynne_ID_1134**Finally.. after months of charity work, people see the good in me! A=ABLE!**7 days ago**Townspeople*likes this.*earlier today*townspeople//Arthur Dimmesdale*Congratulations, Hester!*earlier today*arthur_dimmesdale//&lt;br&gt;2253**Arthur Dimmesdale===arthur_dimmesdale**Just found out who Hester&#39;s husband was! Oh shit.**6 days ago**Rodger Chillingworth*mwahahahaha :) gotcha!*earlier today*rodger_chillingworth//&lt;br&gt;124**Arthur Dimmesdale===arthur_dimmesdale**Need to get out of here. NOW.**5 days ago**Hester Prynne*Pearl and I shall join you.*earlier today*hester_prynne_ID_1134//Rodger Chillingworth*....Don&#39;t leave me here alone...I want to come*earlier today*rodger_chillingworth//&lt;br&gt;1331**Townspeople===townspeople**Just heard a BEAUTIFUL speech!**4 days ago**Arthur Dimmesdale*Thank you :)*earlier today*arthur_dimmesdale//&lt;br&gt;3351**Arthur Dimmesdale===arthur_dimmesdale**Finally getting out of here. England, here we come!**3 days ago**Pearl Prynne*Likes this.*earlier today*pearl_prynne//Rodger Chillingworth*Got room for one more? :) Can&#39;t wait for England guys!*earlier today*rodger_chillingworth//&lt;br&gt;161**Rodger Chillingworth===rodger_chillingworth**DIMMESDALE DIED.. I feel as if I have no reason to live anymore.**2 days ago**Townspeople, Hester Prynne, Pearl Prynne*likes this.*earlier today*townspeople_hester_prynne_pearl_prynne//&lt;br&gt;2007**Pearl Prynne===pearl_prynne**Rest In Peace to my father, Arthur Dimmesdale.**1 day ago**Pearl Prynne*And to Chillingworth: thank god you&#39;re dead...you were a little too creepy..*earlier today*pearl_prynne//Townspeople*This is crazy!!*earlier today*townspeople//&lt;br&gt;730**Hester Prynne===hester_prynne_ID_1134**The End...Time to make a movie about my great life. Gonna call it &#39;Easy A&#39;!! Go watch it!**earlier today**">
 </form>
 <table width="90%" border="0" cellpadding="5" cellspacing="0">
-  
+
   <tbody>
   <tr>
     <td valign="top"><table class="" width="800" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#666666">
       <tbody><tr>
         <td width="196" valign="top">
-                  
+
           <p><strong><a href="http://www.classtools.net/fb/33/XfDMNV#">Friends</a></strong> [<a href="javascript:addfriend()">add</a>]</p>
 
-         
+
           <div id="friendsDiv"></div>
-         <div id="friendsDivDisplay"><table id="table-2"><tbody><tr id="Arthur Dimmesdale"><td bgcolor="#C6CFDE"><div align="center"><img height="50px" src="./news_feed_files/arthur_dimmesdale.jpg"></div></td><td><a href="javascript:deleteFriend('Arthur Dimmesdale')">Arthur Dimmesdale</a></td></tr><tr id="Rodger Chillingworth"><td bgcolor="#C6CFDE"><div align="center"><img height="50px" src="./news_feed_files/rodger_chillingworth.jpg"></div></td><td><a href="javascript:deleteFriend('Rodger Chillingworth')">Rodger Chillingworth</a></td></tr><tr id="Pearl Prynne"><td bgcolor="#C6CFDE"><div align="center"><img height="50px" src="./news_feed_files/pearl_prynne.jpg"></div></td><td><a href="javascript:deleteFriend('Pearl Prynne')">Pearl Prynne</a></td></tr><tr id="Governor Bellingham"><td bgcolor="#C6CFDE"><div align="center"><img height="50px" src="./news_feed_files/governor_bellingham.jpg"></div></td><td><a href="javascript:deleteFriend('Governor Bellingham')">Governor Bellingham</a></td></tr><tr id="Mistress Hibbins"><td bgcolor="#C6CFDE"><div align="center"><img height="50px" src="./news_feed_files/mistress_hibbins.jpg"></div></td><td><a href="javascript:deleteFriend('Mistress Hibbins')">Mistress Hibbins</a></td></tr><tr id="Townspeople"><td bgcolor="#C6CFDE"><div align="center"><img height="50px" src="./news_feed_files/townspeople.jpg"></div></td><td><a href="javascript:deleteFriend('Townspeople')">Townspeople</a></td></tr></tbody></table></div>
+         <div id="friendsDivDisplay"><table id="table-2"><tbody><tr id="Arthur Dimmesdale"><td bgcolor="#C6CFDE"><div align="center"><img height="50px" src="http://lumenmiller.weebly.com/uploads/8/2/9/1/8291848/129696082.gif"></div></td><td><a href="javascript:deleteFriend('Arthur Dimmesdale')">Arthur Dimmesdale</a></td></tr><tr id="Rodger Chillingworth"><td bgcolor="#C6CFDE"><div align="center"><img height="50px" src="https://pbs.twimg.com/profile_images/2101836435/image.jpg"></div></td><td><a href="javascript:deleteFriend('Rodger Chillingworth')">Rodger Chillingworth</a></td></tr><tr id="Pearl Prynne"><td bgcolor="#C6CFDE"><div align="center"><img height="50px" src="http://thewallmachine.com/files/1322646685.jpg"></div></td><td><a href="javascript:deleteFriend('Pearl Prynne')">Pearl Prynne</a></td></tr><tr id="Governor Bellingham"><td bgcolor="#C6CFDE"><div align="center"><img height="50px" src="http://ia.media-imdb.com/images/M/MV5BMTIyMzQ0MjU2MV5BMl5BanBnXkFtZTYwNDgxNTA3._V1_SX640_SY720_.jpg"></div></td><td><a href="javascript:deleteFriend('Governor Bellingham')">Governor Bellingham</a></td></tr></tbody></table></div>
 		 <div id="friendAds">
 
 <!--
@@ -194,7 +194,7 @@ NOTE: the "Post" action is now defunct, I think - delete later if not creating p
 <span class="uiButtonText">Edit Profile</span></a></div></td>
           </tr>
           <tr>
-            <td colspan="2"><div id="theStatus"><img src="./news_feed_files/stat.jpg">&nbsp;Birth Year: 1850&nbsp;&nbsp;<img src="./news_feed_files/stat.jpg">&nbsp;Job: Seamstress&nbsp;&nbsp;<img src="./news_feed_files/stat.jpg">&nbsp;Town: Boston, Massechusettes&nbsp;&nbsp;<img src="./news_feed_files/stat.jpg">&nbsp;In A Relationship with:.....who knows.</div></td>
+            <td colspan="2"><div id="theStatus"><b>&nbsp;Birth Year:</b> 1850&nbsp;&nbsp;<b>&nbsp;Job:</b> Seamstress&nbsp;&nbsp;&nbsp;<b>Town:</b> Boston, Massechusettes&nbsp;&nbsp;&nbsp;<b><br />In A Relationship with:</b>.....who knows.</div></td>
             </tr>
           <tr>
             <td colspan="2" align="center"></td>
@@ -209,19 +209,19 @@ NOTE: the "Post" action is now defunct, I think - delete later if not creating p
           </tr>
           <tr>
             <td colspan="2">
-              <div id="newsfeed"><table id="table-1" width="100%"><tbody><tr id="STARTOF-1674"><td><div id="1674"><table border="0" width="100%"><tbody><tr><td width="50" valign="top"><div id="statusPic1674"><img width="75px" src="./news_feed_files/hester_prynne.jpg"></div></td><td><span class="floattopright"><a href="javascript:editIt(1674)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteIt(1674)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="https://www.intuit.com/">Trump</a></b><p>{{final}}</p><p><span class="uiStreamSource">1 year ago</span> | <a href="javascript:addComment(1674)">comment</a></p></td></tr><tr><td></td><td><div id="commentArea1674"><div id="1443258693978"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="20"><img src="./news_feed_files/thumbs-up.png"></td><td><span class="floattopright"><a href="javascript:editComment(1674,1443258693978)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(1674,1443258693978)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Arthur Dimmesdale</a></b> likes this.</td></tr></tbody></table><hr></div></div></td></tr></tbody></table><p></p><hr></div><div id="ENDOF-1674"></div></td></tr><tr id="STARTOF-4067"><td><div id="4067"><table border="0" width="100%"><tbody><tr><td width="50" valign="top"><div id="statusPic4067"><img width="75px" src="./news_feed_files/hester_prynne(1).jpg"></div></td><td><span class="floattopright"><a href="javascript:editIt(4067)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteIt(4067)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="https://www.intuit.com/">Intuit</a></b><p>{{selection}}<span class="uiStreamSource"></span> | <a href="javascript:addComment(4067)">comment</a></p></td></tr><tr><td></td><td><div id="commentArea4067"><div id="1443258693973"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693973"><img width="50px" src="./news_feed_files/townspeople.jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(4067,1443258693973)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(4067,1443258693973)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Townspeople</a></b> No one cares... slut.<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div></div></td></tr></tbody></table><p></p><hr></div><div id="ENDOF-4067"></div></td></tr><tr id="STARTOF-45"><td><div id="45"><table border="0" width="100%"><tbody><tr><td width="50" valign="top"><div id="statusPic45"><img width="75px" src="./news_feed_files/hester_prynne(2).jpg"></div></td><td><span class="floattopright"><a href="javascript:editIt(45)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteIt(45)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Hester Prynne</a></b><p>I don't care about what I've done. This 'A' on my chest stands for 'awesome'.</p><p><span class="uiStreamSource">6 Months Later...</span> | <a href="javascript:addComment(45)">comment</a></p></td></tr><tr><td></td><td><div id="commentArea45"><div id="1443258693966"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="20"><img src="./news_feed_files/thumbs-down.png"></td><td><span class="floattopright"><a href="javascript:editComment(45,1443258693966)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(45,1443258693966)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Townspeople</a></b> dislikes this.</td></tr></tbody></table><hr></div><div id="1443258693967"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693967"><img width="50px" src="./news_feed_files/rodger_chillingworth.jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(45,1443258693967)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(45,1443258693967)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Rodger Chillingworth</a></b> What have you done....I'm back.<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div><div id="1443258693969"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693969"><img width="50px" src="./news_feed_files/arthur_dimmesdale.jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(45,1443258693969)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(45,1443258693969)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Arthur Dimmesdale</a></b> Um..who's this guy<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div></div></td></tr></tbody></table><p></p><hr></div><div id="ENDOF-45"></div></td></tr><tr id="STARTOF-4540"><td><div id="4540"><table border="0" width="100%"><tbody><tr><td width="50" valign="top"><div id="statusPic4540"><img width="75px" src="./news_feed_files/rodger_chillingworth(1).jpg"></div></td><td><span class="floattopright"><a href="javascript:editIt(4540)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteIt(4540)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Rodger Chillingworth</a></b><p>Wife's a hoe.. LOL.. on to the next one!</p><p><span class="uiStreamSource">13 days ago</span> | <a href="javascript:addComment(4540)">comment</a></p></td></tr><tr><td></td><td><div id="commentArea4540"><div id="1443258693960"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693960"><img width="50px" src="./news_feed_files/hester_prynne(3).jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(4540,1443258693960)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(4540,1443258693960)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Hester Prynne</a></b> I thought you were dead..<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div><div id="1443258693961"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693961"><img width="50px" src="./news_feed_files/rodger_chillingworth.jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(4540,1443258693961)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(4540,1443258693961)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Rodger Chillingworth</a></b> Time for revenge! :) mwahaha<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div></div></td></tr></tbody></table><p></p><hr></div><div id="ENDOF-4540"></div></td></tr><tr id="STARTOF-797"><td><div id="797"><table border="0" width="100%"><tbody><tr><td width="50" valign="top"><div id="statusPic797"><img width="75px" src="./news_feed_files/hester_prynne(4).jpg"></div></td><td><span class="floattopright"><a href="javascript:editIt(797)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteIt(797)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Hester Prynne</a></b><p>Starting to think this daughter of mine is an evil, elf child</p><p><span class="uiStreamSource">12 days ago</span> | <a href="javascript:addComment(797)">comment</a></p></td></tr><tr><td></td><td><div id="commentArea797"><div id="1443258693953"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="20"><img src="./news_feed_files/thumbs-up.png"></td><td><span class="floattopright"><a href="javascript:editComment(797,1443258693953)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(797,1443258693953)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Townspeople</a></b> likes this.</td></tr></tbody></table><hr></div><div id="1443258693954"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693954"><img width="50px" src="./news_feed_files/governor_bellingham.jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(797,1443258693954)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(797,1443258693954)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Governor Bellingham</a></b> Let us take her.<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div><div id="1443258693956"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693956"><img width="50px" src="./news_feed_files/hester_prynne(3).jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(797,1443258693956)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(797,1443258693956)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Hester Prynne</a></b> Never!!<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div></div></td></tr></tbody></table><p></p><hr></div><div id="ENDOF-797"></div></td></tr><tr id="STARTOF-1732"><td><div id="1732"><table border="0" width="100%"><tbody><tr><td width="50" valign="top"><div id="statusPic1732"><img width="75px" src="./news_feed_files/arthur_dimmesdale(1).jpg"></div></td><td><span class="floattopright"><a href="javascript:editIt(1732)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteIt(1732)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Arthur Dimmesdale</a></b><p>Not feeling well..think I need a doctor.. Anyone?</p><p><span class="uiStreamSource">11 days ago</span> | <a href="javascript:addComment(1732)">comment</a></p></td></tr><tr><td></td><td><div id="commentArea1732"><div id="1443258693948"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693948"><img width="50px" src="./news_feed_files/rodger_chillingworth.jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(1732,1443258693948)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(1732,1443258693948)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Rodger Chillingworth</a></b> I'm a doctor.. I'd LOVE to help!<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div><div id="1443258693949"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693949"><img width="50px" src="./news_feed_files/hester_prynne(3).jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(1732,1443258693949)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(1732,1443258693949)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Hester Prynne</a></b> I don't think thats such a good idea..<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div></div></td></tr></tbody></table><p></p><hr></div><div id="ENDOF-1732"></div></td></tr><tr id="STARTOF-4905"><td><div id="4905"><table border="0" width="100%"><tbody><tr><td width="50" valign="top"><div id="statusPic4905"><img width="75px" src="./news_feed_files/pearl_prynne(1).jpg"></div></td><td><span class="floattopright"><a href="javascript:editIt(4905)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteIt(4905)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Pearl Prynne</a></b><p>So... who's my dad..</p><p><span class="uiStreamSource">10 days ago</span> | <a href="javascript:addComment(4905)">comment</a></p></td></tr><tr><td></td><td><div id="commentArea4905"><div id="1443258693943"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693943"><img width="50px" src="./news_feed_files/hester_prynne(3).jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(4905,1443258693943)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(4905,1443258693943)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Hester Prynne</a></b> Pearl, sweetie, you don't have an earthy father...only a heavenly one.<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div><div id="1443258693944"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693944"><img width="50px" src="./news_feed_files/pearl_prynne.jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(4905,1443258693944)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(4905,1443258693944)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Pearl Prynne</a></b> Shut up mom..<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div></div></td></tr></tbody></table><p></p><hr></div><div id="ENDOF-4905"></div></td></tr><tr id="STARTOF-989"><td><div id="989"><table border="0" width="100%"><tbody><tr><td width="50" valign="top"><div id="statusPic989"><img width="75px" src="./news_feed_files/pearl_prynne(2).jpg"></div></td><td><span class="floattopright"><a href="javascript:editIt(989)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteIt(989)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Pearl Prynne</a></b><p>Still waiting to find out who this father of mine is. (the human one...not bs heavenly one)</p><p><span class="uiStreamSource">9 days ago</span> | <a href="javascript:addComment(989)">comment</a></p></td></tr><tr><td></td><td><div id="commentArea989"><div id="1443258693939"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693939"><img width="50px" src="./news_feed_files/hester_prynne(3).jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(989,1443258693939)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(989,1443258693939)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Hester Prynne</a></b> Pearl! You are such an elf!!<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div></div></td></tr></tbody></table><p></p><hr></div><div id="ENDOF-989"></div></td></tr><tr id="STARTOF-4980"><td><div id="4980"><table border="0" width="100%"><tbody><tr><td width="50" valign="top"><div id="statusPic4980"><img width="75px" src="./news_feed_files/arthur_dimmesdale(2).jpg"></div></td><td><span class="floattopright"><a href="javascript:editIt(4980)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteIt(4980)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Arthur Dimmesdale</a></b><p>Chillin' on the scaffold.. #sins :(</p><p><span class="uiStreamSource">8 days ago</span> | <a href="javascript:addComment(4980)">comment</a></p></td></tr><tr><td></td><td><div id="commentArea4980"><div id="1443258693933"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693933"><img width="50px" src="./news_feed_files/townspeople.jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(4980,1443258693933)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(4980,1443258693933)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Townspeople</a></b> Oh Reverend, you are amazing!!<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div><div id="1443258693934"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693934"><img width="50px" src="./news_feed_files/rodger_chillingworth.jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(4980,1443258693934)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(4980,1443258693934)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Rodger Chillingworth</a></b> I've figured you out.<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div><div id="1443258693935"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693935"><img width="50px" src="./news_feed_files/arthur_dimmesdale.jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(4980,1443258693935)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(4980,1443258693935)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Arthur Dimmesdale</a></b> It isn't what it seems.<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div></div></td></tr></tbody></table><p></p><hr></div><div id="ENDOF-4980"></div></td></tr><tr id="STARTOF-2225"><td><div id="2225"><table border="0" width="100%"><tbody><tr><td width="50" valign="top"><div id="statusPic2225"><img width="75px" src="./news_feed_files/hester_prynne(5).jpg"></div></td><td><span class="floattopright"><a href="javascript:editIt(2225)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteIt(2225)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Hester Prynne</a></b><p>Finally.. after months of charity work, people see the good in me! A=ABLE!</p><p><span class="uiStreamSource">7 days ago</span> | <a href="javascript:addComment(2225)">comment</a></p></td></tr><tr><td></td><td><div id="commentArea2225"><div id="1443258693929"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="20"><img src="./news_feed_files/thumbs-up.png"></td><td><span class="floattopright"><a href="javascript:editComment(2225,1443258693929)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(2225,1443258693929)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Townspeople</a></b> likes this.</td></tr></tbody></table><hr></div><div id="1443258693930"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693930"><img width="50px" src="./news_feed_files/arthur_dimmesdale.jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(2225,1443258693930)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(2225,1443258693930)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Arthur Dimmesdale</a></b> Congratulations, Hester!<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div></div></td></tr></tbody></table><p></p><hr></div><div id="ENDOF-2225"></div></td></tr><tr id="STARTOF-2253"><td><div id="2253"><table border="0" width="100%"><tbody><tr><td width="50" valign="top"><div id="statusPic2253"><img width="75px" src="./news_feed_files/arthur_dimmesdale(3).jpg"></div></td><td><span class="floattopright"><a href="javascript:editIt(2253)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteIt(2253)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Arthur Dimmesdale</a></b><p>Just found out who Hester's husband was! Oh shit.</p><p><span class="uiStreamSource">6 days ago</span> | <a href="javascript:addComment(2253)">comment</a></p></td></tr><tr><td></td><td><div id="commentArea2253"><div id="1443258693926"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693926"><img width="50px" src="./news_feed_files/rodger_chillingworth.jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(2253,1443258693926)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(2253,1443258693926)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Rodger Chillingworth</a></b> mwahahahaha :) gotcha!<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div></div></td></tr></tbody></table><p></p><hr></div><div id="ENDOF-2253"></div></td></tr><tr id="STARTOF-124"><td><div id="124"><table border="0" width="100%"><tbody><tr><td width="50" valign="top"><div id="statusPic124"><img width="75px" src="./news_feed_files/arthur_dimmesdale(4).jpg"></div></td><td><span class="floattopright"><a href="javascript:editIt(124)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteIt(124)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Arthur Dimmesdale</a></b><p>Need to get out of here. NOW.</p><p><span class="uiStreamSource">5 days ago</span> | <a href="javascript:addComment(124)">comment</a></p></td></tr><tr><td></td><td><div id="commentArea124"><div id="1443258693922"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693922"><img width="50px" src="./news_feed_files/hester_prynne(3).jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(124,1443258693922)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(124,1443258693922)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Hester Prynne</a></b> Pearl and I shall join you.<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div><div id="1443258693923"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693923"><img width="50px" src="./news_feed_files/rodger_chillingworth.jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(124,1443258693923)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(124,1443258693923)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Rodger Chillingworth</a></b> ....Don't leave me here alone...I want to come<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div></div></td></tr></tbody></table><p></p><hr></div><div id="ENDOF-124"></div></td></tr><tr id="STARTOF-1331"><td><div id="1331"><table border="0" width="100%"><tbody><tr><td width="50" valign="top"><div id="statusPic1331"><img width="75px" src="./news_feed_files/townspeople(1).jpg"></div></td><td><span class="floattopright"><a href="javascript:editIt(1331)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteIt(1331)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Townspeople</a></b><p>Just heard a BEAUTIFUL speech!</p><p><span class="uiStreamSource">4 days ago</span> | <a href="javascript:addComment(1331)">comment</a></p></td></tr><tr><td></td><td><div id="commentArea1331"><div id="1443258693920"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693920"><img width="50px" src="./news_feed_files/arthur_dimmesdale.jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(1331,1443258693920)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(1331,1443258693920)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Arthur Dimmesdale</a></b> Thank you :)<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div></div></td></tr></tbody></table><p></p><hr></div><div id="ENDOF-1331"></div></td></tr><tr id="STARTOF-3351"><td><div id="3351"><table border="0" width="100%"><tbody><tr><td width="50" valign="top"><div id="statusPic3351"><img width="75px" src="./news_feed_files/arthur_dimmesdale(5).jpg"></div></td><td><span class="floattopright"><a href="javascript:editIt(3351)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteIt(3351)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Arthur Dimmesdale</a></b><p>Finally getting out of here. England, here we come!</p><p><span class="uiStreamSource">3 days ago</span> | <a href="javascript:addComment(3351)">comment</a></p></td></tr><tr><td></td><td><div id="commentArea3351"><div id="1443258693916"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="20"><img src="./news_feed_files/thumbs-up.png"></td><td><span class="floattopright"><a href="javascript:editComment(3351,1443258693916)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(3351,1443258693916)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Pearl Prynne</a></b> Likes this.</td></tr></tbody></table><hr></div><div id="1443258693918"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693918"><img width="50px" src="./news_feed_files/rodger_chillingworth.jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(3351,1443258693918)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(3351,1443258693918)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Rodger Chillingworth</a></b> Got room for one more? :) Can't wait for England guys!<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div></div></td></tr></tbody></table><p></p><hr></div><div id="ENDOF-3351"></div></td></tr><tr id="STARTOF-161"><td><div id="161"><table border="0" width="100%"><tbody><tr><td width="50" valign="top"><div id="statusPic161"><img width="75px" src="./news_feed_files/rodger_chillingworth(2).jpg"></div></td><td><span class="floattopright"><a href="javascript:editIt(161)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteIt(161)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Rodger Chillingworth</a></b><p>DIMMESDALE DIED.. I feel as if I have no reason to live anymore.</p><p><span class="uiStreamSource">2 days ago</span> | <a href="javascript:addComment(161)">comment</a></p></td></tr><tr><td></td><td><div id="commentArea161"><div id="1443258693914"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="20"><img src="./news_feed_files/thumbs-up.png"></td><td><span class="floattopright"><a href="javascript:editComment(161,1443258693914)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(161,1443258693914)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Townspeople, Hester Prynne, Pearl Prynne</a></b> likes this.</td></tr></tbody></table><hr></div></div></td></tr></tbody></table><p></p><hr></div><div id="ENDOF-161"></div></td></tr><tr id="STARTOF-2007"><td><div id="2007"><table border="0" width="100%"><tbody><tr><td width="50" valign="top"><div id="statusPic2007"><img width="75px" src="./news_feed_files/pearl_prynne(3).jpg"></div></td><td><span class="floattopright"><a href="javascript:editIt(2007)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteIt(2007)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Pearl Prynne</a></b><p>Rest In Peace to my father, Arthur Dimmesdale.</p><p><span class="uiStreamSource">1 day ago</span> | <a href="javascript:addComment(2007)">comment</a></p></td></tr><tr><td></td><td><div id="commentArea2007"><div id="1443258693911"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693911"><img width="50px" src="./news_feed_files/pearl_prynne.jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(2007,1443258693911)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(2007,1443258693911)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Pearl Prynne</a></b> And to Chillingworth: thank god you're dead...you were a little too creepy..<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div><div id="1443258693912"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693912"><img width="50px" src="./news_feed_files/townspeople.jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(2007,1443258693912)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(2007,1443258693912)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Townspeople</a></b> This is crazy!!<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div></div></td></tr></tbody></table><p></p><hr></div><div id="ENDOF-2007"></div></td></tr><tr id="STARTOF-730"><td><div id="730"><table border="0" width="100%"><tbody><tr><td width="50" valign="top"><div id="statusPic730"><img width="75px" src="./news_feed_files/hester_prynne(6).jpg"></div></td><td><span class="floattopright"><a href="javascript:editIt(730)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteIt(730)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Hester Prynne</a></b><p>The End...Time to make a movie about my great life. Gonna call it 'Easy A'!! Go watch it!</p><p><span class="uiStreamSource">earlier today</span> | <a href="javascript:addComment(730)">comment</a></p></td></tr><tr><td></td><td><div id="commentArea730"></div></td></tr></tbody></table><p></p><hr></div><div id="ENDOF-730"></div></td></tr></tbody></table></div>
-				
+              <div id="newsfeed"><table id="table-1" width="100%"><tbody><tr id="STARTOF-1674"><td><div id="1674"><table border="0" width="100%"><tbody><tr><td width="50" valign="top"><div id="statusPic1674"><img width="75px" src="https://thenypost.files.wordpress.com/2015/06/usa-election_trump1.jpg"></div></td><td><span class="floattopright"><a href="javascript:editIt(1674)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteIt(1674)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="https://www.intuit.com/">Trump</a></b><p>{{final}}</p><p><span class="uiStreamSource">1 year ago</span> | <a href="javascript:addComment(1674)">comment</a></p></td></tr><tr><td></td><td><div id="commentArea1674"><div id="1443258693978"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="20"><img src="./news_feed_files/thumbs-up.png"></td><td><span class="floattopright"><a href="javascript:editComment(1674,1443258693978)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(1674,1443258693978)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Arthur Dimmesdale</a></b> likes this.</td></tr></tbody></table><hr></div></div></td></tr></tbody></table><p></p><hr></div><div id="ENDOF-1674"></div></td></tr><tr id="STARTOF-4067"><td><div id="4067"><table border="0" width="100%"><tbody><tr><td width="50" valign="top"><div id="statusPic4067"><img width="75px" src="https://www.betterbuys.com/wp-content/uploads/2014/09/intuit-small.png"></div></td><td><span class="floattopright"><a href="javascript:editIt(4067)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteIt(4067)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="https://www.intuit.com/">Intuit</a></b><p>{{selection}}<span class="uiStreamSource"></span> | <a href="javascript:addComment(4067)">comment</a></p></td></tr><tr><td></td><td><div id="commentArea4067"></div></td></tr></tbody></table><p></p><hr></div><div id="ENDOF-4067"></div></td></tr><tr id="STARTOF-45"><td><div id="45"><table border="0" width="100%"><tbody><tr><td width="50" valign="top"><div id="statusPic45"><img width="75px" src="http://ia.media-imdb.com/images/M/MV5BMTIxNjkyMDEzMV5BMl5BanBnXkFtZTYwODAyNTA3._V1_SX640_SY720_.jpg"></div></td><td><span class="floattopright"><a href="javascript:editIt(45)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteIt(45)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Hester Prynne</a></b><p>I don't care about what I've done. This 'A' on my chest stands for 'awesome'.</p><p><span class="uiStreamSource">6 Months Later...</span> | <a href="javascript:addComment(45)">comment</a></p></td></tr><tr><td></td><td><div id="commentArea45"><div id="1443258693966"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="20"><img src="./news_feed_files/thumbs-down.png"></td><td><span class="floattopright"><a href="javascript:editComment(45,1443258693966)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(45,1443258693966)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Townspeople</a></b> dislikes this.</td></tr></tbody></table><hr></div><div id="1443258693967"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693967"><img width="50px" src="https://pbs.twimg.com/profile_images/2101836435/image.jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(45,1443258693967)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(45,1443258693967)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Rodger Chillingworth</a></b> What have you done....I'm back.<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div><div id="1443258693969"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693969"><img width="50px" src="http://lumenmiller.weebly.com/uploads/8/2/9/1/8291848/129696082.gif"></div></td><td><span class="floattopright"><a href="javascript:editComment(45,1443258693969)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(45,1443258693969)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Arthur Dimmesdale</a></b> Um..who's this guy<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div></div></td></tr></tbody></table><p></p><hr></div><div id="ENDOF-45"></div></td></tr><tr id="STARTOF-4540"><td><div id="4540"><table border="0" width="100%"><tbody><tr><td width="50" valign="top"><div id="statusPic4540"><img width="75px" src="https://pbs.twimg.com/profile_images/2101836435/image.jpg"></div></td><td><span class="floattopright"><a href="javascript:editIt(4540)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteIt(4540)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Rodger Chillingworth</a></b><p>Wife's a great person.. LOL.. on to the next one!</p><p><span class="uiStreamSource">13 days ago</span> | <a href="javascript:addComment(4540)">comment</a></p></td></tr><tr><td></td><td><div id="commentArea4540"><div id="1443258693960"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693960"><img width="50px" src="http://ia.media-imdb.com/images/M/MV5BMTIxNjkyMDEzMV5BMl5BanBnXkFtZTYwODAyNTA3._V1_SX640_SY720_.jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(4540,1443258693960)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(4540,1443258693960)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Hester Prynne</a></b> I thought you were dead..<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div><div id="1443258693961"><table border="0" bgcolor="#EDEFF4" width="100%"><tbody><tr><td width="50" valign="top"><div id="commentPic1443258693961"><img width="50px" src="https://pbs.twimg.com/profile_images/2101836435/image.jpg"></div></td><td><span class="floattopright"><a href="javascript:editComment(4540,1443258693961)"><img src="./news_feed_files/edit.png"></a><a href="javascript:deleteComment(4540,1443258693961)"><img src="./news_feed_files/delete.jpeg"></a></span><b><a href="http://www.classtools.net/fb/33/XfDMNV#">Rodger Chillingworth</a></b> Time for revenge! :) mwahaha<p><span class="uiStreamSource">earlier today</span></p></td></tr></tbody></table><span style="font-size: 1px;"><hr></span></div></div></td></tr></tbody></table><p></p><hr></div><div id="ENDOF-4540"></div></td></tr></tbody></table></div>
+
 				<div id="introDiv" style="display: none;">
 				 <div align="center"><img src="./news_feed_files/loading.gif" align="middle"><br>
-           
+
 				  </div>
 				</div>
-				
+
 				</td>
           </tr>
-          
+
           <tr><td>
-          
+
 <div id="ads3">
 <span align="center">&nbsp;<script type="text/javascript"><!--
 google_ad_client = "ca-pub-8912794096382956";
@@ -236,7 +236,7 @@ google_ad_height = 60;
 </div>
 
 </td></tr>
-          
+
         </tbody></table>
         </td>
         <td align="right" width="145" rowspan="4" valign="top">&nbsp;</td>
@@ -282,7 +282,7 @@ google_ad_height = 60;
   <a href="javascript:alert(document.getElementById('newsfeed').innerHTML)">_ </a>
   <iframe name="foo" id="foo" style="width: 1px; height: 1px; border:0px;"></iframe>
   <iframe name="saver" id="saver" style="width: 1pt; height: 1px; border:0px;"></iframe>
- 
+
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -291,17 +291,17 @@ google_ad_height = 60;
 <h1 align="center">"Fakebook" allows teachers and students to create imaginary profile pages  for study purposes: <a href="http://www.classtools.net/main_area/fakebook/gallery" target="_blank">view the GALLERY of examples!</a> </h1>
 <h3 align="center" style="background:yellow"><font color="red">NOTE</font>: Fakebook will be getting a complete redesign in August 2013 ready for the new school year - watch this space, there will be plenty of new features!</h3>
                 <div align="center">
-                
-                
+
+
                                   </div>
-                
+
                 <p></p><h1 align="center">Use "Fakebook" to chart the plot of a book, the development of a character, a series of historical events, the debates and relationships between people, and so on!</h1>
                 <p>
                 </p><h1 align="center">Get started by entering a name at the top of the page. Then proceed to add friends, posts, comments and profile information.</h1>
                 <h1 align="center">&nbsp;</h1>
                 <h1 align="center">You can save your work and edit it again later.</h1>
 
-                
+
     <p>&nbsp;</p>
 <p>&nbsp;</p>
 
@@ -310,8 +310,8 @@ google_ad_height = 60;
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>&nbsp;</p>            
-                
+<p>&nbsp;</p>
+
 </div>
 
 
@@ -325,10 +325,10 @@ google_ad_height = 60;
 <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> instead of the above if things go wrong -->
 <script src="./news_feed_files/jquery-ui.min.js"></script>
 <link href="./news_feed_files/jquery-ui.css" rel="stylesheet" type="text/css">
-  
+
 
 <script src="./news_feed_files/jquery.colorbox-min.js"></script>
-  
+
 
 <script type="text/javascript" src="./news_feed_files/jquery.msgbox.js"></script>
 <link rel="stylesheet" type="text/css" href="./news_feed_files/jquery.msgbox.css">
@@ -354,7 +354,7 @@ if(temp.indexOf("http://www.")==-1)
 	temp="http://www.classtools.net"+temp[1];
 	window.location=temp;
 	}
-	
+
 animate=0;
 animval=0;
 animatedcollapse.addDiv('embedIt', 'fade=1,height=150px')
@@ -373,16 +373,16 @@ animatedcollapse.init()
 
 function printy()
 {
-//document.getElementById('ads2').style.display = 'none'; 
-document.getElementById('ads').style.display = 'none'; 
-document.getElementById('ads3').style.display = 'none'; 
-document.getElementById('fixeddiv').style.display = 'none'; 
+//document.getElementById('ads2').style.display = 'none';
+document.getElementById('ads').style.display = 'none';
+document.getElementById('ads3').style.display = 'none';
+document.getElementById('fixeddiv').style.display = 'none';
 
 window.print();
-//document.getElementById('ads2').style.display = 'block'; 
-document.getElementById('ads').style.display = 'block'; 
-document.getElementById('ads3').style.display = 'block'; 
-document.getElementById('fixeddiv').style.display = 'block'; 
+//document.getElementById('ads2').style.display = 'block';
+document.getElementById('ads').style.display = 'block';
+document.getElementById('ads3').style.display = 'block';
+document.getElementById('fixeddiv').style.display = 'block';
 }
 
 /////////////Initial Variables.
@@ -440,12 +440,12 @@ s=s.join("");
 return s
 }
 
-function checkEnter(e,func){ 
-var characterCode 
+function checkEnter(e,func){
+var characterCode
 
-if(e && e.which){ 
+if(e && e.which){
 e = e
-characterCode = e.which 
+characterCode = e.which
 }
 else{
 e = event
@@ -605,7 +605,7 @@ if(temp.indexOf("/fb/home/page")!=-1)
 
 function InFrame()//check if embeded; if so, lose menu!
 {
-  if (top.location != location) 
+  if (top.location != location)
   {
   	mydiv = document.getElementById("fixeddiv");
 	mydiv.style.display = "none"; //to hide it
@@ -629,7 +629,7 @@ function VinCheck(e)
        keynum = e.which;
     keychar = String.fromCharCode(keynum);
     charcheck = /[a-zA-Z0-9]/;
-    return charcheck.test(keychar);        
+    return charcheck.test(keychar);
 }
 </script>
 <form name="ac" method="POST" action="http://www.activehistory.co.uk/amember/member.php?classtools">
@@ -652,7 +652,7 @@ $('login').hide();document.getElementById("sharetwit").innerHTML='<iframe src="h
 
 
 
-	
+
 
 </script>
 <script>
@@ -679,7 +679,7 @@ margin: 0px;
 
 .small
 {
-font-size:x-small;	
+font-size:x-small;
 }
 
 #loginBox
@@ -687,7 +687,7 @@ font-size:x-small;
 position:absolute;
 z-index:10;
 top:0px;
-left:10px;	
+left:10px;
 color:black;
 }
 
@@ -731,7 +731,7 @@ function showLoginDetails()
 {
 document.getElementById("loginBtn").style.display="none"
 document.getElementById("loggedIn").innerHTML="<a href='#'>Logged in as "+	premiumUserName +"</a> | <a href='javascript:logout()'>Logout</a> | <a target='_blank' href='http://www.classtools.net'>Home</a> | <a target='_blank' href='http://www.classtools.net/fform.php'>Contact</a> |  <a target='_blank' href='http://www.classtools.net/_SEARCH/index.php'>PowerSearch</a> | ";
-if(typeof savethefave == 'function') 
+if(typeof savethefave == 'function')
 	{document.getElementById("loggedIn").innerHTML+="<span id='favBar'><a href='javascript:savethefave()'>Add to Favourites</a> | </span>";}
 //IMPORTANT NOTE: "savethefave" belongs in the PARENT page, so can be customised in terms of specifying title / location of widget. This function in turn calls savefave() on THIS page.
 if(typeof removAds == 'function') {removAds()}
@@ -756,14 +756,14 @@ $.ajax({ url: 'http://www.classtools.net/templates/_logout.php',
 			dataType: 'json',
 			type: 'post',
 			async:false,//wait for response before doing something
-			success: function(data) 
+			success: function(data)
 				{
 				document.getElementById("loginBtn").style.display="block"
 				document.getElementById("loggedIn").style.display="none"
 				premiumUser=0;
                 }
-			});	
-	
+			});
+
 }
 
 
@@ -772,7 +772,7 @@ function viewfavs()
 
 function saveFave(theLoc,theTitle)
 {
-	
+
 	temp=self.location+""
 	$.ajax({ url: 'http://www.classtools.net/classtools_premium/add_template_to_user_profile.php',
 			 data: {
@@ -781,7 +781,7 @@ function saveFave(theLoc,theTitle)
 			 		},
 			dataType: 'json',
 			type: 'post',
-			success: function(data) 
+			success: function(data)
 				{
 				alert(data.theResult)
                 }
@@ -796,7 +796,7 @@ subPw=document.getElementById("thepw").value;
 doLogin(subUsr,subPw)
 }
 
-function doLogin(subUsr,subPw)//can be called from above, or from the icons.swf 
+function doLogin(subUsr,subPw)//can be called from above, or from the icons.swf
 {
 	$.ajax({ url: 'http://www.classtools.net/templates/_login_manual.php',
 			 data: {
@@ -806,7 +806,7 @@ function doLogin(subUsr,subPw)//can be called from above, or from the icons.swf
 			dataType: 'json',
 			type: 'post',
 			async:false,//wait for response before doing something
-			success: function(data) 
+			success: function(data)
 				{
 				hideFields();
 				if(data.success==1)
@@ -820,7 +820,7 @@ function doLogin(subUsr,subPw)//can be called from above, or from the icons.swf
 					{
 					alert(data.theResult)
 					}
-					
+
                 }
 			});
 
@@ -834,7 +834,7 @@ function doLogin(subUsr,subPw)//can be called from above, or from the icons.swf
     <div id="loginBtn"><a href="http://www.classtools.net/" target="_blank">Classtools.net Home</a> | <a href="javascript:showFields()">Premium Login</a> | <a target="_blank" href="https://www.facebook.com/Classtools">Facebook Fanpage</a>
      | <a target="_blank" href="http://www.classtools.net/_SEARCH/index.php">PowerSearch</a>
     </div>
-    
+
     <div id="loggedIn">
     </div>
 
@@ -876,7 +876,7 @@ if(wheel==1)
 	//$("#loginDiv").hide();
 	$('#login').css({"padding":"0px","margin":"0px","top":"auto","bottom":"0px","background-color":"black"});
 	$('#loginBox').css({"top":"auto","bottom":"40px"});
-	
+
 	$("#login").show();
 	}
 

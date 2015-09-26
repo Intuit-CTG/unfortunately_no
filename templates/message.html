@@ -51,7 +51,7 @@ top:-7px;
 }
 .vidFrame{
 position:relative;
-z-index:9998 !important;	
+z-index:9998 !important;
 }
 
 .pName{
@@ -101,7 +101,7 @@ a:active {text-decoration:underline;}
 
 #profileNmText
 {
-position:relative;	
+position:relative;
 }
 
 #profileImg{
@@ -110,7 +110,7 @@ position:relative;
 	left:5px;
 	width:160px;
 	height:160px;
-	background:yellow;	
+	background:yellow;
 	color:black;
 	z-index:1
 	}
@@ -132,7 +132,7 @@ position:relative;
 border-radius: 2px;
 }
 .blueBtn{
-background:#4e69e2;	
+background:#4e69e2;
 }
 .redBtn{
 background:red;	font-weight:bold;
@@ -143,7 +143,7 @@ background:red;	font-weight:bold;
 {
 font-size: 18px;
 background-color:yellow;
-color:red;	
+color:red;
 }
 
 #blockDiv{
@@ -175,7 +175,7 @@ background:white;
 border:1px solid grey;
 text-align:center;
 font-size:large;
-font-weight:bold;	
+font-weight:bold;
 width:320px;
 }
 
@@ -243,7 +243,7 @@ left:-5px;
 	max-width:100px;
 	max-height:100px;
 	}
-	
+
 .leftBoxText{
 	position:absolute;
 	bottom:0px;
@@ -287,19 +287,19 @@ left:-5px;
 
 
 
-	
+
 .postImg
 {
 max-height:45px;
 max-width:45px;
-background:#e9eaed;	
+background:#e9eaed;
 }
 
 .comImg
 {
 max-height:33px;
 max-width:33px;
-background:#e9eaed;	
+background:#e9eaed;
 }
 
 
@@ -314,10 +314,10 @@ background:#e9eaed;
     display: none;
 }
 
-	
+
 #sortable
 {
-display:inline-block;	
+display:inline-block;
 }
 .stat{
 	padding:0px;
@@ -331,7 +331,7 @@ display:inline-block;
 -moz-border-radius: 3px;
 border-radius: 3px;
 	}
-	
+
 
 #container {
 	position:relative;
@@ -354,7 +354,7 @@ border-radius: 3px;
 	height:100%;
 	right:0px;
 	top:0px;
-	width:200px;	
+	width:200px;
 	background:#eceff5;
 	z-index:30;
 	}
@@ -364,9 +364,9 @@ border-radius: 3px;
 	width:100%;
 	height:45px;
 	left:0px;
-	top:0px;	
+	top:0px;
 	background:#44619D;
-	z-index:99;	
+	z-index:99;
 	}
 
 #header{
@@ -375,7 +375,7 @@ border-radius: 3px;
 	color:#fff;
 	overflow:hidden;
 	}
-	
+
 #headerBar{
 	height:45px;
 	width:850px;
@@ -384,34 +384,34 @@ border-radius: 3px;
 	position:relative;
 	top:-15px;
 	margin-top:0px;
-	
-	}	
-	
+
+	}
+
 .clickableByVisitor
 {
 position:relative !important;
 z-index:5001 !important;
 }
-	
+
 
 .postPic{
 		max-width:500px;
-		float:none;	
+		float:none;
 		}
-		
+
 .attachCommentPic{
 		max-width:500px;
-		float:none;	
+		float:none;
 		}
-		
+
 .cameraIcon
 		{
 		position:relative;
 		float:right !important;
 		top:-7px;
-		margin-right:20px;	
+		margin-right:20px;
 		}
-		
+
 .comment{
 	color:grey;
 	border 1px black;
@@ -421,26 +421,26 @@ z-index:5001 !important;
 	min-height:40px;
 	padding-bottom:5px;
 	overflow:auto;
-	
+
 	}
-	
+
 #postStatusHeader,#postStatusFooter{
 	width:500px;
 	padding:7px;
 	background:#F6F7F8;
 	}
-	
+
 #postStatusFooter{
 	text-align:right;
-	min-height:20px;	
+	min-height:20px;
 	overflow:auto;
 	}
-	
+
 #postStatusBox{
 	width:515px;
 	background:#FFFFFF;
 	}
-	
+
 textarea {
 	width: 99%;
 	font: 11px;
@@ -466,7 +466,7 @@ textarea {
 	overflow:auto;
 	}
 
-	
+
 textarea {
 		border:2px solid #ccc;
 		vertical-align: top;
@@ -476,11 +476,11 @@ textarea {
 		-webkit-transition: height 0.2s;
 		-moz-transition: height 0.2s;
 		transition: height 0.2s;
-		}	
-	
+		}
 
-	
-	
+
+
+
 .comName{
 font-weight:bold;
 color:#3B5998;
@@ -512,8 +512,8 @@ function loadTags() {
 	//foreach($("body :input").autocomplete({source: eval(allpeeps)});
 	$("#attachCommentName").autocomplete({source: eval(allpeeps)});
 	$("#posterName").autocomplete({source: eval(allpeeps)});
-	
-	
+
+
 	//$("body").find(":input").each(function(e)
 		//{
 		//var t=$(this).attr('id')
@@ -543,7 +543,7 @@ if(numberOfEntries<5){apprise("To save pressure on the server, at least 5 posts 
 				else{save(pw);}
 			});
 		}
-		
+
 	else//it can't be a 'locked' template because the click button would be disabled if so; so it's unlocked.
 		{
 		//Save and issue a success message
@@ -556,7 +556,7 @@ function deleteFB()
 {
 if(templateType!="unlocked")
 	{alert("You must be logged in as the author before you can delete this profile");return}
-	
+
 	if(confirm("This will delete this Fakebook profile ENTIRELY. Are you sure you wish to proceed?")==true)
 	{
 	document.deletetest.editingMode.value=templateType;
@@ -593,7 +593,7 @@ function askPW()
 							},
 					error: function(x, t, m){
 							apprise("Error Report - "+t);
-							currentImg="fbimages/silhouette.jpg"	
+							currentImg="fbimages/silhouette.jpg"
 							}
 						});
 					}
@@ -626,7 +626,7 @@ numberOfBlocks=0
     $("#blocks").find(".leftBox").each(function() {
 		numberOfBlocks++
 		var title=$(this).find(".leftBoxTitle").html();
-		blString="\n\t<block>\n\t\t<blockTitle><![CDATA["+title+"]]></blockTitle>";	
+		blString="\n\t<block>\n\t\t<blockTitle><![CDATA["+title+"]]></blockTitle>";
 			$(this).find(".leftBoxElement").each(function() {
 				leftBoxText = $(this).find(".leftBoxText").html();//text.
 				leftImg = $(this).find('.leftImg').attr('src');	//image.
@@ -635,7 +635,7 @@ numberOfBlocks=0
 		temp+=blString+"\n\t</block>";
 		if(blString.indexOf("type here")!=-1)
 			{blocksFull=0}
-		
+
     });
 temp+="\n\n"
 
@@ -652,11 +652,11 @@ if(numberOfEntries>10 && numberOfVideos>=1 && wallpaperchanged==1 && blocksFull=
 		var txt = removeLinks(removeBRs($(this).find(".pText").html()));
 		var postImg = $(this).find('.postImg').attr('src')
 		var postAttachImg = $(this).find('.postPic').attr('src')
-		
+
 		//
 		var likesPost=$(this).find(".likePost").val();
-		
-		
+
+
 			//Gets the comments for the post.
 			comString="";
 			$(this).find(".comment").each(function() {
@@ -664,7 +664,7 @@ if(numberOfEntries>10 && numberOfVideos>=1 && wallpaperchanged==1 && blocksFull=
 				comName = $(this).find(".comName").html();
 				comImg = $(this).find('.comImg').attr('src');
 				comAttachImg =  $(this).find('.attachCommentPic').attr('src');
-				var likesCom=$(this).find(".likeCom").val();	
+				var likesCom=$(this).find(".likeCom").val();
 				comString+="\n\t\t<comment><comName>"+comName+"</comName><comText><![CDATA["+comText+"]]></comText><comImg>"+comImg+"</comImg><comAttachImg>"+comAttachImg+"</comAttachImg><likesC><![CDATA["+likesCom+"]]></likesC></comment>";
 				});
 		temp+="\t<postBlock>\n\t\t<postEntry><name><![CDATA["+name+"]]></name><date><![CDATA["+date+"]]></date><txt><![CDATA["+txt+"]]></txt><postImg><![CDATA["+postImg+"]]></postImg><postAttachImg><![CDATA["+postAttachImg+"]]></postAttachImg><likesP><![CDATA["+likesPost+"]]></likesP></postEntry>";//post
@@ -689,10 +689,10 @@ temp+="</data>"
 			if(templateType!="fresh")
 				{
 				apprise("Template successfully resaved.<p>&nbsp;</p><div class='share-button'></div><p>&nbsp;</p>");
-				
+
     			var share = new Share(".share-button", {
 						image:"http://www.classtools.net/_squareicon.png",
-						url:"http://www.classtools.net/FB/1311-jUmjBH", 
+						url:"http://www.classtools.net/FB/1311-jUmjBH",
 						  networks: {
 							facebook: {
 							  app_id: "602752456409826",
@@ -704,8 +704,8 @@ temp+="</data>"
 						}
 						  }
 						});
-				
-				
+
+
 				}
 			else
 				{
@@ -717,11 +717,11 @@ temp+="</data>"
 				alert(folder+" "+subfolder);
 				$("#savedURL").val("http://www.classtools.net/FB/"+folder+"-"+subfolder);
 				$("#reloadForm").submit();
-				});	
-					
+				});
+
 				}
 			},
-		error: function (xhr, ajaxOptions, thrownError) 
+		error: function (xhr, ajaxOptions, thrownError)
 			{
 			err=(xhr.statusText);
 			err+=(xhr.responseText);
@@ -735,7 +735,7 @@ temp+="</data>"
 
 
 
-  
+
 
 
 
@@ -757,22 +757,22 @@ $.get('../../_FAKEBOOK/saved/'+folder+'/'+subfolder+'/_data.xml?cachebuster='+Ma
 	alreadyUsedPics[profileNm]=profileImage;
 	var coverImage = $(x).find('coverImg').text();
 	if(coverImage=="fbpics/cover.jpg"){coverImage="fbpics/cover_blank.jpg"}
-	
+
 	$('#wallpaperBtn').attr('src',coverImage);
 	var abouttxt = $(x).find('about').text();
 	$("#aboutBoxTextArea").val(abouttxt);
-	
+
 	addAbout()
-	
-	
+
+
 	  	//BLOCKS
 		$("#blocks").html("");//empty out.
-		
+
 		$(x).find('block').each(function(){
 			$("#playGround").html(blockHTML);//create a new block in the playground area
 			blockTit=$(this).find('blockTitle').text();
 			$("#playGround .leftBoxTitle").html(blockTit)
-			
+
 			txt=new Array();pic=new Array();
 					$(this).find('blockData').each(function(){
 						txt.push($(this).find('text').text());
@@ -787,17 +787,17 @@ $.get('../../_FAKEBOOK/saved/'+folder+'/'+subfolder+'/_data.xml?cachebuster='+Ma
 				});
 			$("#blocks").append($("#playGround").html())
 		});
-		
+
 		//POSTS AND COMMENTS
-		
+
 		$($(x).find('postBlock').get().reverse()).each(function(){
 				//POSTS
 				$(this).find('postEntry').each(function(){
 						poster=$(this).find('name').text();
 						d=$(this).find('date').text();
-					
+
 						txty=$(this).find('txt').text();
-						
+
 						currentImg=$(this).find('postImg').text();
 						likesPost=$(this).find('likesP').text();
 						postAttachImage=$(this).find('postAttachImg').text();
@@ -809,7 +809,7 @@ $.get('../../_FAKEBOOK/saved/'+folder+'/'+subfolder+'/_data.xml?cachebuster='+Ma
 						addPost(1, 0);
 						$("#likeInputPost"+postCounter).val(likesPost)
 						if(likesPost!=""){addLikes(postCounter,1)}
-						
+
 					});
 					//COMMENTS...
 					$(this).find('comment').each(function(){
@@ -841,7 +841,7 @@ setTimeout("loadTags()",5000);
 }
 
 
-	
+
 /////POST FUNCTIONS/////
 postCounter=0//gives unique identifier to each post
 likesStarter="Liked by you, Fakebook and 25 others"
@@ -869,7 +869,7 @@ $("#likes"+prefix+e).show();
 
 
 
-function addPost(freshNotEdit, e){		//for fresh posts, e=0; otherwise e is sent 
+function addPost(freshNotEdit, e){		//for fresh posts, e=0; otherwise e is sent
 	$("#introBlurb").hide()
 	if(freshNotEdit){
 		if(textBoxOpen!=""){eval(textBoxOpen)}
@@ -888,7 +888,7 @@ function addPost(freshNotEdit, e){		//for fresh posts, e=0; otherwise e is sent
 		}
 	if(loadingUp==0){getPic(poster);}//to get currentImg
 	d=$("#"+prefix+"posterDate").val()
-	
+
 	n=$("#"+prefix+"postBox").val()
 	//alert("1 - "+n)
 	n=n.replace(/\n/g,"<br>")
@@ -915,7 +915,7 @@ function deletePost(e){
 		if(r) {$("#p"+e).remove()}
 	});
 }
-	
+
 function editPost(e){
 	if(textBoxOpen!=""){eval(textBoxOpen)}
 	textBoxOpen="addPost(0,"+e+")";
@@ -923,8 +923,8 @@ function editPost(e){
 	ppic=$("#postPic"+e).attr("src");
 	poster=$("#postName"+e).html()
 	d=$("#postDate"+e).html()
-	
-	temp=$("#postText"+e).html()	
+
+	temp=$("#postText"+e).html()
 	temp=removeBRs(temp)
 	temp=removeLinks(temp)
 	t="<div class='postBar'><input type='text' name='editposterName' id='editposterName' value='"+poster+"'><br>";
@@ -959,7 +959,7 @@ function addComment(freshNotEdit,e){//e = post number.
 		prefix="attach"
 		}
 	textBoxOpen=""
-	temp=$("#"+prefix+"CommentBox").val()	
+	temp=$("#"+prefix+"CommentBox").val()
 	//alert("3 - "+temp)
 	txt=temp.replace(/\n/g,"");//clear up the text
 	txt=removeBRs(txt)///clear up the text
@@ -988,7 +988,7 @@ function addCommentBx(freshNotEdit,e){//e = post
 	if(freshNotEdit){
 		prefix="attach"
 		poster="";
-		temp="Write a comment...."; 
+		temp="Write a comment....";
 		atchdPic='fbpics/camera.png'
 		$('#p'+e+' #postOptionsDiv').hide();
 	}
@@ -1002,7 +1002,7 @@ function addCommentBx(freshNotEdit,e){//e = post
 		temp=temp.replace(/\n/g,"");
 		temp=removeLinks(temp)
 	}
-	
+
 	textBoxOpen="addComment("+freshNotEdit+","+e+")";
 	t="<div id='commentWrapper'>"
 	t+="<input type='text' name='"+prefix+"CommentName' id='"+prefix+"CommentName' value='"+poster+"'><br>"
@@ -1011,7 +1011,7 @@ function addCommentBx(freshNotEdit,e){//e = post
 	t+="<input type='button' style='display:none' id='rmvBtn' class='blueBtn' value='Remove Image' onClick='rmvit(\""+prefix+"CommentPic\")'>"
 	t+="<input type='button' class='blueBtn' value='Submit' onClick='addComment("+freshNotEdit+","+e+")'>"
 	t+="</div>"
-	
+
 	if(freshNotEdit){
 		$("#c"+e).append(t);
 		$("#"+prefix+"CommentBox").select();
@@ -1031,7 +1031,7 @@ function deleteComment(e){
 	$('.appriseOverlay').remove();$('.appriseOuter').remove()//IE bug means block isn't working.
 	apprise('Are you sure?', {'verify':true}, function(r) {if(r) {$("#com"+e).remove()}});
 }
-	
+
 
 ///////////END OF COMMENT FUNCTIONS////////////
 
@@ -1102,8 +1102,8 @@ $("#premAd").hide()
 	/*filter: alpha(opacity=50);*/
 	/*opacity: 0.5;*/
     background: grey
-                url('../../_FAKEBOOK/uploadImage/images/spinner.gif') 
-                50% 50% 
+                url('../../_FAKEBOOK/uploadImage/images/spinner.gif')
+                50% 50%
                 no-repeat;
 }
 </style>
@@ -1114,48 +1114,48 @@ $(document).ajaxStop(function() {$("#modal").hide();});
 <div id="publicOptions" style="position:fixed; right:0px;top:-15px; z-index:10000">
     	<p>
          <!--<span class="redBtn clickableByVisitor"><a href="javascript:contactForm()">REPORT A BUG!</a></span>-->
-        
-        
-         
-         
-        
-        
-        
-          
-          
-         
-         
+
+
+
+
+
+
+
+
+
+
+
         &nbsp;</p>
         </div>
 
- 
+
 <div id="container" style="padding-right: 0px;">
   <div id="header" data-intro="You can click here to add a wallpaper image" data-position="right">
-	
+
             <img data-intro="Welcome to Fakebook!" data-position="top" id="profileImg" src="http://cdn.theatlantic.com/assets/media/img/mt/2015/07/RTX1GZCO/lead_960.jpg?1435784946">
             <span id="profileName" data-intro="Start by adding a name here" data-position="top">
             <a href="javascript:addNameBox()"><span id="profileNmText" style="color:green">Trump$</span></a>
             <input style="font-size:x-large;display:none" type="text" name="editProfileName" id="editProfileName">
-          
+
             </span>
-            
+
             <span style="position:relative;top:-170px;width:850px;float:right;overflow:hidden;background:#3C5A9A">
             <img style="float:right;z-index:-1;margin:0;height:313px" id="wallpaperBtn" src="http://cdn1.images.videobash.com/photos/000/084/833/84833.jpg">
     		</span>
-         
+
     </div>
-    
-   
+
+
     <div id="headerBar">
-    
+
     	<p>
-          
+
         </p>
     </div>
-    
-    	
+
+
     </div>
-    
+
 
 <div id="leftWrapper">
 
@@ -1163,7 +1163,7 @@ $(document).ajaxStop(function() {$("#modal").hide();});
 <form action="/signup" method="post">
     	<div class="leftBox">
         <div class="aboutTitle">About</div>
-        <span id="aboutBoxText" style="clear:both;padding-top:10px;font-size:small;;">Relationship: 
+        <span id="aboutBoxText" style="clear:both;padding-top:10px;font-size:small;;">Relationship:
           <select name="Relationship" class = "selectorPosition">
           <option value="married">Married</option>
           <option value="engaged">Engaged</option>
@@ -1187,10 +1187,10 @@ $(document).ajaxStop(function() {$("#modal").hide();});
 </span>
         </div>
     </div>
-	
+
      <br>
 
-	
+
     <div id="advert2">
         <div class="leftBox">
             <div class="aboutTitle">Sponsored Links</div>
@@ -1221,15 +1221,15 @@ $(document).ajaxStop(function() {$("#modal").hide();});
                         <span class="leftBoxElement"><img class="leftImg" src="./message_files/invis.gif"><span class="leftBoxText">type here</span></span>
                         <span class="leftBoxElement"><img class="leftImg" src="./message_files/invis.gif"><span class="leftBoxText">type here</span></span>
       			</div>
-    </div>           
-            
+    </div>
+
      <div id="addNewBlock">
      <a href="javascript:attachNewBlock()">Add New Block</a>
      </div>
      <p>&nbsp;</p>
-     
-     
-     
+
+
+
 </div>
 
 <script>
@@ -1242,15 +1242,15 @@ init();
 
 
 </script>
-    
-       
+
+
                       <div id="mainArea" data-intro="You can start adding posts here" data-position="top">
-                      
-               
+
+
                       	<span id="addPostWrapper">
                             <div id="postStatusHeader">
                             <p><b>Add a post!</b>
-                            <br><span style="font-size:11px;color:grey"> 
+                            <br><span style="font-size:11px;color:grey">
                             (TIP 1: You can add hyperlinks and links to YouTube/Vimeo videos too!)
                             <br>(TIP 2: You can click on any image that appears to change it!)
                             </span>
@@ -1268,18 +1268,16 @@ init();
 <button type='submit'>Post</button>
 
                                 </div>
-                                
+
 </form>
                             <div id="postStatusFooter">
-                                <input type="button" class="blueBtn" name="but" id="but" value="Post" onclick="addPost(1,0)">
-                                <img id="postPic" class="postPic cameraIcon" src="./message_files/camera.png">
                                 <input style="display:none" type="button" class="blueBtn" name="rmv" id="rmv" value="Remove" onclick="$(&#39;#postPic&#39;).attr(&#39;src&#39;, &#39;fbpics/camera.png&#39;);$(this).hide()">
                             </div>
                          </span>
-                            
+
                             <div id="sortable" class="ui-sortable"><div id="p5" class="stat"><img class="postImg" id="postImg5" src="./message_files/silhouette.jpg"><span class="pName" id="postName5">Grandpa died :'(</span><br><span class="pDate" id="postDate5">earlier today....</span><br><span class="pText" id="postText5">Write something.... </span><br><img class="postPic" id="postPic5" src="./message_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(5,1)">Like</a> · <a href="javascript:addCommentBx(1,5)">Comment</a> · <a href="javascript:editPost(5)">Edit</a> · <a href="javascript:deletePost(5)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost5"></div><span id="likeBxPost5" style="display:none"><input class="likePost" id="likeInputPost5" value=""><input type="button" value="Submit" onclick="javascript:addLikes(5,1)"></span><div class="c" id="c5"></div></div><div id="p4" class="stat"><img class="postImg" id="postImg4" src="./message_files/silhouette.jpg"><span class="pName" id="postName4">2 months away from a full family!</span><br><span class="pDate" id="postDate4">earlier today....</span><br><span class="pText" id="postText4">Write something.... </span><br><img class="postPic" id="postPic4" src="./message_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(4,1)">Like</a> · <a href="javascript:addCommentBx(1,4)">Comment</a> · <a href="javascript:editPost(4)">Edit</a> · <a href="javascript:deletePost(4)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost4"></div><span id="likeBxPost4" style="display:none"><input class="likePost" id="likeInputPost4" value=""><input type="button" value="Submit" onclick="javascript:addLikes(4,1)"></span><div class="c" id="c4"></div></div><div id="p3" class="stat"><img class="postImg" id="postImg3" src="./message_files/pregnant.jpg"><span class="pName" id="postName3">Pregnant</span><br><span class="pDate" id="postDate3">2 months ago</span><br><span class="pText" id="postText3">Write something.... </span><br><img class="postPic" id="postPic3" src="./message_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(3,1)">Like</a> · <a href="javascript:addCommentBx(1,3)">Comment</a> · <a href="javascript:editPost(3)">Edit</a> · <a href="javascript:deletePost(3)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost3"></div><span id="likeBxPost3" style="display:none"><input class="likePost" id="likeInputPost3" value=""><input type="button" value="Submit" onclick="javascript:addLikes(3,1)"></span><div class="c" id="c3"></div></div><div id="p2" class="stat"><img class="postImg" id="postImg2" src="./message_files/engaged.jpg"><span class="pName" id="postName2">Engaged</span><br><span class="pDate" id="postDate2"></span><br><span class="pText" id="postText2">Getting engaged &lt;3 </span><br><img class="postPic" id="postPic2" src="./message_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(2,1)">Like</a> · <a href="javascript:addCommentBx(1,2)">Comment</a> · <a href="javascript:editPost(2)">Edit</a> · <a href="javascript:deletePost(2)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost2"></div><span id="likeBxPost2" style="display:none"><input class="likePost" id="likeInputPost2" value=""><input type="button" value="Submit" onclick="javascript:addLikes(2,1)"></span><div class="c" id="c2"></div></div><div id="p1" class="stat"><img class="postImg" id="postImg1" src="./message_files/silhouette.jpg"><span class="pName" id="postName1">Looking for new house</span><br><span class="pDate" id="postDate1"></span><br><span class="pText" id="postText1">Looking for new house </span><br><img class="postPic" id="postPic1" src="./message_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(1,1)">Like</a> · <a href="javascript:addCommentBx(1,1)">Comment</a> · <a href="javascript:editPost(1)">Edit</a> · <a href="javascript:deletePost(1)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost1"></div><span id="likeBxPost1" style="display:none"><input class="likePost" id="likeInputPost1" value=""><input type="button" value="Submit" onclick="javascript:addLikes(1,1)"></span><div class="c" id="c1"></div></div>
                             <p>&nbsp;</p>
-                            
+
                             <span align="center" id="advert4" style="margin-left:20px">
                             <script async="" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                             <!-- Fakebook Horizontal -->
@@ -1288,65 +1286,65 @@ init();
                             (adsbygoogle = window.adsbygoogle || []).push({});
                             </script>
                             </span>
-                            
+
                              <p>&nbsp;</p>
-                            
-                            </div> 
-                            
-                            
-                            <!-- INTRO -->                    
+
+                            </div>
+
+
+                            <!-- INTRO -->
 <div id="introBlurb" style="display:none">
 <h3 align="center">"Fakebook" allows teachers and students to create imaginary profile pages  for study purposes.</h3>
 
                 <div align="center">
-                
-                
+
+
                 </div>
-                
+
                 <p align="center">Use "Fakebook" to chart the plot of a book, the development of a character, a series of historical events, the debates and relationships between people, and so on!</p>
-                
+
                 <p align="center">Get started by entering a name at the top of the page. Then proceed to add friends, posts, comments and profile information.</p>
                 <p align="center">You can save your work and edit it again later.</p>
 </div>
-   <!-- INTRO -->  
-                            
+   <!-- INTRO -->
+
                         </div>
-                        
-                         
-                        
-                        
+
+
+
+
                         <div id="rightBar">
-                        
-                        
-                        
-                        
-                        
+
+
+
+
+
                         	<span id="advert1">
 								<script type="text/javascript"><!--
                                 google_ad_client = "ca-pub-8912794096382956";
                                 /* FakebookNew - SideTower */
-                               
+
                                 //-->
                                 </script>
-                              
+
                             </span>
-                            
+
                             <p>&nbsp;</p>
-                            
-                            
-                            
+
+
+
                             <p>&nbsp;</p>
-                            
+
                             <span id="advert3">
-								
+
                                 <!-- Fakebook NEW - leftBox -->
-                               
+
                                 </script>
                             </span>
-                            
+
                         </div>
-                        
-                    
+
+
 
 
 
@@ -1371,7 +1369,7 @@ $("#videoIntro").attr('src',"http://player.vimeo.com/video/25366185?autoplay=0" 
 
 if(templateType!="locked")
 	{
-	$('#saveBtnBanner').show()	
+	$('#saveBtnBanner').show()
 	}
 
 if(templateType=="fresh")
@@ -1381,7 +1379,7 @@ if(templateType=="fresh")
 	$('body').click(function(){$('body').chardinJs('stop')})
 	}
 //if(templateType=="fresh"){apprise("<h1 align='center'>Welcome to the new Fakebook!</h1><br>Get started by inputting a name, adding some information in the 'about' box, and adding some posts!");}
-	
+
 	if(templateType=="locked")//lock down the screen until we know it's loaded up / unlocked.
 	{
 	$("#addPostWrapper").hide();
@@ -1400,7 +1398,7 @@ if(templateType!="locked")//and now remove blocks on editing if it's not a locke
 		{$("#blockDiv").remove()}
 
 	$("#blocks").sortable({axis: 'y',containment:"#blocks"});
-	$(document).on('click', '#aboutBox', function() 
+	$(document).on('click', '#aboutBox', function()
 		{
 		if(textBoxOpen!=""){eval(textBoxOpen)}
 		textBoxOpen="addAbout()";
@@ -1412,10 +1410,10 @@ if(templateType!="locked")//and now remove blocks on editing if it's not a locke
 			});
 
 $(document).on('click', '#aboutBoxTextArea', function(e) {e.stopPropagation();});//stop clicks in textbox firing the aboutarea re-opening it again
-	
+
 	//SIDEBOX FUNCTIONS
 			$(document).on('click', '.leftBoxText, .leftBoxTitle', function() {
-			
+
 			if($('#editSideBoxText').length)//if another sidebox is already open (not this one) then process it.
 				{
 				if(!$("#editSideBoxText").is(":hover")){$('#editSideBoxText').blur()}
@@ -1444,23 +1442,23 @@ $(document).on('click', '#aboutBoxTextArea', function(e) {e.stopPropagation();})
 				});
 				$(document).on("click", ".deleteCross", function() {
 					if(confirm("Are you sure you want to delete this block?")){$(this).parent().fadeOut(500, function(){ $(this).remove();})}
-					
+
 				});
-	
+
 	$('.normal').autosize();
 		$('.animated').autosize({append: "\n"});
 	$('#profileNmText').on('click', function() {addNameBox()});
 	//$('#editProfileName').on('blur', function() {changeName()});
-	
-	
-	
+
+
+
 	$('body').on('click', 'a', function() {$('textarea').blur()});
-	
+
 	//IMAGE CLICKED.
 	$('body').on('click', 'img', function() {
 		if(templateType=="fresh")
 			{apprise("After creating a few posts and saving your template, you will be able to upload pictures directly from your computer by clicking on them.");return}////RJT DISABLED FOR THE MOMENT
-		
+
 		if(!this.id.length)
 			{
 			$(this).attr('id','tempID'+Math.floor(Math.random()*5000));//give this pic a unique id dynamically.
@@ -1530,7 +1528,7 @@ if(uploadedNm.indexOf(" ")==-1){return}
 if(uploadedNm.indexOf("'")!=-1){return}
 if(uploadedNm.indexOf("<")!=-1){return}
 
-	
+
 temp=uploadedNm.split(" ");
 if(temp.length!=2){return}//only go for names which are two words.
 
@@ -1542,7 +1540,7 @@ $.ajax({ url: "../../_FAKEBOOK/_getPic/uploaded.php",
 			 type: 'get',
 			 cache: false,
 			 async: false
-		});	
+		});
 }
 
 
@@ -1559,7 +1557,7 @@ function addAbout(){
 		$("#aboutBoxText").show()
 		$("#aboutBoxText").html("<img height='10px' src='fbpics/circle.gif' />"+n)
 		}
-		
+
 
 function addBoxPic(childEl,parentEl){
 				n=$("#editSideBoxText").val();
@@ -1567,7 +1565,7 @@ function addBoxPic(childEl,parentEl){
 				$(childEl).html(n)
 				}
 
-		
+
 function unloading()
 {
 //clear out the temp images if page being left without a save.
@@ -1602,20 +1600,20 @@ function removeBRs(temp){
 $(window).resize(function() {
 	if($(window).width()<1375)
 		{
-		$("#fixedRight").hide(); 
-		$("#container").css("padding-right","0px"); 
+		$("#fixedRight").hide();
+		$("#container").css("padding-right","0px");
 		if (typeof window.console !== 'undefined') {console.log($(window).width())}
 		}
 	if($(window).width()>=1375)
 		{
-		$("#fixedRight").show(); 	
-		$("#container").css("padding-right","205px"); 
+		$("#fixedRight").show();
+		$("#container").css("padding-right","205px");
 		}
 }).resize();
 
 //Detect enter being pressed.
-$.fn.pressEnter = function(fn) {  
-    return this.each(function() {  
+$.fn.pressEnter = function(fn) {
+    return this.each(function() {
         $(this).bind('enterPress', fn);
         $(this).keyup(function(e){
             if(e.keyCode == 13)
@@ -1623,8 +1621,8 @@ $.fn.pressEnter = function(fn) {
               $(this).trigger("enterPress");
             }
         })
-    });  
- }; 
+    });
+ };
 
 //Remove attached image and replace with camera.
 function rmvit(n){
@@ -1648,18 +1646,18 @@ aname=aname.split(" ");aname=aname.join("_");
 $.ajax({ url: "../../_FAKEBOOK/_getPic/index.php",
 			 data: {searchName: searchName, parsedName: aname},
 			 type: 'get',cache: false, dataType: 'json', async:false,
-			 success: function(data) 
+			 success: function(data)
 					{
 					if(data.results=="BAD_IMAGE"){currentImg="fbimages/silhouette.jpg"	}
 					else{currentImg="fbimages/"+aname.charAt(0)+"/"+data.results;}
 					alreadyUsedPics[searchName]=currentImg;
 					loadTags()
 					},
-			error: function(x, t, m) 
+			error: function(x, t, m)
 					{
 					$("#modal").hide();//Block screen.
             		apprise("Error Report - "+t);
-					currentImg="fbimages/silhouette.jpg"	
+					currentImg="fbimages/silhouette.jpg"
 					}
 		});
 }
@@ -1677,15 +1675,15 @@ function freshPostBox(){
 function init() {
 	$("#modal").hide();
 	$("#sortable").sortable({containment:"#sortable"});//Apply sortable function to the main posts.
- 	$('textarea').autosize(); 
+ 	$('textarea').autosize();
 	$('input, textarea').on('focus', function(e) {if($(this).val().indexOf("....")!=-1){$(this).val('')}});
 	if(templateType=="unlocked"){$("#delBtn").show()}
 	}
-	
-	
+
+
 function addLinks(str){
 	if (str.indexOf(" www.")!=-1){str=str.split(" www.");str=str.join(" http://www.")}
-	
+
 	//VIDEO
 	ytflag=0;vimFlag=0
 	if(str.indexOf("http://www.youtube.com/")!=-1){
@@ -1719,7 +1717,7 @@ function addLinks(str){
 		vidId=ytStem2[0]
 		ytStem2.splice(0,1);ytStem2=ytStem2.join(" ");
 		str=ytStem[0]+ytStem2
-		
+
 		//temp3=str.split("vimeo.com/")
 		//temp3=temp3[1]
 		//if(temp3.indexOf(" ")!=-1){temp3=temp3.split(" ");temp3=temp3[0]}
@@ -1732,7 +1730,7 @@ function addLinks(str){
 		}
 	var regex = /(https?:\/\/([-\w\.]+)+(:\d+)?(\/([\w\/_\.]*(\?\S+)?)?)?)/ig
 	//alert("8 - "+str)
-	str= str.replace(regex, "<a href='$1' target='_blank'>$1</a>");	
+	str= str.replace(regex, "<a href='$1' target='_blank'>$1</a>");
 	if(str.indexOf("hztp://")!=-1){str=str.split("hztp://");str=str.join("http://");}
 	return str
 	}
@@ -1741,7 +1739,7 @@ function removeLinks(str){
 	//might be worth looking at the old FB for other pain in the arse browswers too.
 	var tree = $("<div>" + str + "</div>");
 	$(tree).find('a[href]').replaceWith(function() { return this.childNodes });
-	str=tree.html();	
+	str=tree.html();
 	//THIS STRIPS OUT THE VIDEO and replaces it with its raw id.
 	var stringOfHtml = str;
 	te='iframe id="';z=""
@@ -1760,8 +1758,8 @@ function removeLinks(str){
 	str=(html.html().replace(/THISISNOTASCRIPTREALLY/g, 'script'));
 	return str+" "+z
 	}
-	
-	
+
+
 function embedYT(str,size)
 {
 if(size=='big'){ytw=180;yth=145;vimw=200;vimh=122;}
@@ -1829,7 +1827,7 @@ function embedIt()
 		if(templateType=="fresh"){apprise("Please SAVE your template first to get a unique URL for this Fakebook!");return}
 		apprise($("#shareDivOptions").html())
 		}
-		
+
 		function popup(s){
 			$('.appriseOverlay').remove();$('.appriseOuter').remove()
 			if(s=="QR")
@@ -1841,8 +1839,8 @@ function embedIt()
 				apprise('<b>URL</b>: http://www.classtools.net/FB/1311-jUmjBH<p><b>Embed Code</b>:<br><textarea rows="10" cols="40"></textarea>');
 				}
 			}
-		
-		
+
+
 
 //USEFUL FUNCTION FOR A CONTACT FORM WITHIN A PAGE.
 function contactForm()
@@ -1880,18 +1878,18 @@ function get_browser_version(){
     return M[1];
     }
 
-</script>	
-		
+</script>
+
 
 <div style="display:none" id="shareDivOptions">
     <ul>
     <li><a href="javascript:popup('widget')">URL Link / Embed Code</a></li>
     <li><a href="javascript:popup('QR')">QR Code</a></li>
     <li><a href="http://www.classtools.net/_FAKEBOOK/download.php">Download Web Shortcut</a></li>
-    
+
     </ul>
 </div>
-<div id="preloadQR" style="display:none"><img src="./message_files/chart" alt="QR"></div> 
+<div id="preloadQR" style="display:none"><img src="./message_files/chart" alt="QR"></div>
 
 
 
@@ -1923,7 +1921,7 @@ margin: 0px;
 
 .small
 {
-font-size:x-small;	
+font-size:x-small;
 }
 
 #loginBox
@@ -1931,7 +1929,7 @@ font-size:x-small;
 position:absolute;
 z-index:10;
 top:0px;
-left:10px;	
+left:10px;
 color:black;
 }
 
