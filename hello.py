@@ -3,6 +3,18 @@ import csv
 from collections import Counter
 from gensim import corpora, models, similarities
 
+def create_sample_vector(sample):
+    """
+    Creates a vector out of a samples
+    """
+    word_dict = Counter()
+    for el in sample[1].lower().split():
+        word_dict[el] += 1
+    for el in sample[2].lower().split():
+        word_dict[el] += 1
+    for el in sample[6].lower().split():
+        word_dict[el] += 1
+    return word_dict
 
 def parse_samples(num_samples):
     """
