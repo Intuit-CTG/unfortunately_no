@@ -1,9 +1,6 @@
 from flask import Flask, render_template, request
 import csv
 from collections import Counter
-from IPython import embed
-from re import sub
-from random import randint
 from gensim import corpora, models, similarities
 
 
